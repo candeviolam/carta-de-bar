@@ -1,6 +1,11 @@
+:root {
+  --fuente-titulo: "Sofia Sans Extra Condensed";
+  --fuente-subtitulo: "Varela Round";
+  --fuente-productos: "Quicksand";
+}
+
 body {
   background-color: #131212;
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
 
 .container {
@@ -9,11 +14,20 @@ body {
   flex-direction: row;
 }
 
+/*Imágenes*/
 .contenedor_imagenes {
   width: 30%;
   height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
+}
+
+.copa,
+.cerveza,
+.botella {
+  width: 100%;
+  height: 33.33%;
 }
 
 .copa {
@@ -28,6 +42,23 @@ body {
   background-color: #dcc723;
 }
 
+img {
+  width: 130px;
+  height: 180px;
+  margin-left: 13px;
+  margin-top: 13px;
+}
+/*Fin imágenes*/
+
+.separador {
+  width: 70%;
+  height: 5px;
+  background-color: #dec624;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*Información*/
 .contenedor_informacion {
   width: 70%;
   height: 100vh;
@@ -38,17 +69,11 @@ body {
 }
 
 .info {
+  width: 70%;
   display: flex;
   flex-direction: column;
-}
-
-.contenedor_informacion div {
-  width: 90%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .col-10,
@@ -56,3 +81,35 @@ body {
   display: flex;
   flex-direction: column !important;
 }
+
+h1,
+h4 {
+  font-family: var(--fuente-titulo);
+}
+
+h4 {
+  color: #5fa4a3cc;
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 40px;
+  color: #e43e49c5;
+}
+
+h5 {
+  font-family: var(--fuente-subtitulo);
+  font-size: 15px;
+  color: #efefefc9;
+}
+
+span {
+  font-family: var(--fuente-productos);
+  font-size: 10px;
+  color: #efefefcc;
+}
+
+.span_rojo {
+  color: #e43e49cb;
+}
+/*Fin información*/
