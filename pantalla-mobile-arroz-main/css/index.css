@@ -1,0 +1,187 @@
+:root {
+  --color-body: #4b526d;
+  --fondo-pantalla: #31363e;
+  --color-fuente: #d5d7d9;
+  --color-tarjetas: #16171b;
+  --color-botones: #ff6501;
+  --color-megusta: #f50304;
+  font-family: "Questrial", sans-serif;
+}
+
+body {
+  background-color: var(--color-body) !important;
+}
+
+.container-fluid {
+  background-color: var(--fondo-pantalla);
+  width: 340px;
+  height: 720px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.señal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.señal_hora span {
+  color: var(--color-fuente);
+}
+
+.señal_hora span {
+  font-size: 10px;
+}
+
+.señal_iconos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.señal_iconos img {
+  margin-left: 5px;
+  margin-top: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+}
+
+.menu img {
+  width: 23px;
+  height: 20px;
+}
+
+.menu_campana {
+  margin-right: 7px;
+}
+
+div p {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+}
+
+p {
+  color: var(--color-fuente);
+}
+
+.contenedor_buscar {
+  display: flex;
+  flex-direction: row;
+}
+
+.buscar {
+  background-color: white;
+  border-radius: 7px;
+  width: 90%;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgb(148, 147, 147);
+}
+
+.buscar i {
+  color: rgb(182, 178, 178);
+  padding: 5px;
+}
+
+.flechas_buscar {
+  background-color: var(--color-botones);
+  border-radius: 7px;
+  width: 38px;
+  height: 35px;
+  margin-left: 4px;
+}
+
+.popular_food {
+  font-size: smaller;
+}
+
+/*Tarjetas*/
+.contenedor_tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  height: 170px;
+  background-color: var(--color-tarjetas);
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border: 0.2px solid rgb(92, 92, 92);
+}
+
+.imagen {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.tarjeta img {
+  width: 120px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+/* .corazon i {
+  color: var(--color-megusta);
+  margin-left: 105px;
+} */
+
+.corazon img {
+  width: 10px;
+}
+
+.tarjeta span {
+  color: var(--color-fuente);
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta p {
+  font-size: smaller;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton_mas {
+  height: 23px;
+  width: 23px !important;
+}
+/*Fin tarjetas*/
+
+.contenedor_boton_mas_grande {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_boton_mas_grande button {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-botones);
+  border: none;
+}
+
+.boton_mas_grande {
+  color: var(--color-fuente);
+  size-adjust: auto;
+}
+
+/*Opciones del usuario*/
+.cuenta i {
+  color: var(--color-fuente);
+}
+/*Fin opciones del usuario*/
